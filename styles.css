@@ -236,9 +236,9 @@ h1 {
       margin-bottom: 20px;
     }
     #countdown {
-      display: inline flex;
+      display: flex;
       justify-content: center;
-      gap: 15px;
+      gap: 2vw;
       font-size: 2rem;
       font-weight: bold;
       padding-left: 10px;
@@ -318,6 +318,7 @@ footer .container {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
