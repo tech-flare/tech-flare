@@ -16,6 +16,7 @@
 
 * {
   box-sizing: border-box;
+   ali
 }
 
 body {
@@ -57,11 +58,26 @@ a {
   color: #0b1020;
   /* display: inline-flex; */
 }
-.btn.for_time{
-   border-color: transparent;
+.for_time{
+    border-color: transparent;
   background: linear-gradient(135deg, var(--primary), var(--accent));
   color: #0b1020;
   display: block;
+  
+  align-items: center;
+  gap: 2vw;
+  padding: 3.5vw 3.5vw;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow);
+  font-weight: 600;
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #0b1020;
+  /* display: inline-flex; */ 
+   
 }
 
 .btn.ghost {
@@ -318,6 +334,7 @@ footer .container {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
