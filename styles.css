@@ -1,0 +1,320 @@
+/* =============================
+   Global Styles & Variables
+============================= */
+:root {
+  --bg: #0b1020;
+  --bg-2: #0f1a36;
+  --text: #e8f0ff;
+  --muted: #b6c3e6;
+  --primary: #6dd3ff;
+  --accent: #9d7bff;
+  --glass: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.12);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --radius: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, var(--bg), #090d1a);
+  color: var(--text);
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =============================
+   Buttons
+============================= */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow);
+  font-weight: 600;
+}
+
+.btn.primary {
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #0b1020;
+  /* display: inline-flex; */
+}
+.btn.for_time{
+   border-color: transparent;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #0b1020;
+  display: block;
+}
+
+.btn.ghost {
+  background: transparent;
+}
+
+/* =============================
+   Header & Navigation
+============================= */
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(11, 16, 32, 0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-weight: 800;
+}
+
+.brand .logo {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 10px;
+  
+  
+}
+
+.nav .links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+/* =============================
+   Hero Section
+============================= */
+.hero {
+  padding: 5.5rem 0 4rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.kicker {
+  color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 3.6vw, 3.2rem);
+  line-height: 1.05;
+  margin: 0.6rem 0 1rem;
+  font-weight: 800;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: 1.2rem;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 0.9rem;
+  margin-top: 1.4rem;
+  flex-wrap: wrap;
+}
+
+.mock {
+  height: 450px;
+  width: 100%;
+  /* aspect-ratio: 16/10; */
+  border-radius: var(--radius);
+  /* border: 1px dashed var(--border); */
+  display: flex;
+  place-items: center;
+  color: var(--muted);
+  justify-content: center;
+}
+
+/* =============================
+   Cards & Events
+============================= */
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+  box-shadow: var(--shadow);
+  padding: 1.1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.event h3 {
+  margin: 0.3rem 0 0.4rem;
+  font-size: 1.2rem;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  padding: 0.35rem 0.6rem;
+  background: var(--glass);
+  border: 1px solid var(--border);
+}
+
+/* =============================
+   Sections & Titles
+============================= */
+section {
+  padding: 3.5rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 800;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+/* =============================
+   Info Banner
+============================= */
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.tile {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  /* background: linear-gradient(135deg, var(--primary), var(--accent)); */
+}
+
+h1 {
+      margin-bottom: 20px;
+    }
+    #countdown {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      font-size: 2rem;
+      font-weight: bold;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .time-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .label {
+      font-size: 0.8rem;
+      color: #666;
+      display: flex;
+      margin-top: 5px;
+    }
+
+/* =============================
+   CTA Section
+============================= */
+.cta {
+
+  text-align: center;
+  padding: 3.5rem 1rem;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(109, 211, 255, 0.12), rgba(157, 123, 255, 0.12));
+}
+.event-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+/* =============================
+   Footer
+============================= */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem 0;
+  color: var(--muted);
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* edits by me */
+.register_and_rulebook {
+  
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* =============================
+   Responsive Styles
+============================= */
+@media (max-width: 980px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .info {
+    grid-template-columns: 1fr;
+  }
+}
