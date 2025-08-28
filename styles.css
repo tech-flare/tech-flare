@@ -67,7 +67,7 @@ a {
   align-items: center;
   gap: 2vw;
   padding: 3.5vw 3.5vw;
-  border-radius: 12px;
+  border-radius: 3vw;
   border: 1px solid var(--border);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
   backdrop-filter: blur(8px);
@@ -308,8 +308,8 @@ footer .container {
 /* edits by me */
 .register_and_rulebook {
   
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
 }
@@ -334,6 +334,7 @@ footer .container {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
