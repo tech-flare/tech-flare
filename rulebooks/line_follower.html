@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Line Follower Rule Book</title>
+  <style>
+/* =============================  
+   Global Styles & Variables  
+============================= */
+:root {
+  --bg: #0b1020;
+  --bg-2: #0f1a36;
+  --text: #e8f0ff;
+  --muted: #b6c3e6;
+  --primary: #6dd3ff;
+  --accent: #9d7bff;
+  --glass: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.12);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --radius: 18px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, var(--bg), #090d1a);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+.container {
+  width: min(1100px, 92%);
+  margin: auto;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =============================  
+   Header  
+============================= */
+header {
+  background: rgba(11, 16, 32, 0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+/* =============================  
+   Main Content  
+============================= */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+}
+h2 {
+  color: var(--accent);
+  margin-top: 30px;
+  font-weight: 700;
+}
+ul {
+  margin: 10px 0 20px 20px;
+}
+li {
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+
+/* =============================  
+   Footer  
+============================= */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem 0;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* =============================  
+   Responsive  
+============================= */
+@media (max-width: 768px) {
+  body { font-size: 16px; }
+  header { padding: 15px; }
+  main { padding: 20px; margin: 10px; }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Line Follower Event Rule Book</h1>
+  </header>
+
+  <main>
+    <h2>1. Event Overview</h2>
+    <ul>
+      <li><strong>Event Name:</strong> Line Follower Robot</li>
+      <li><strong>Organized By:</strong> Swami Vivekanand College of Engineering</li>
+      <li>Participants must design an autonomous robot that follows a predefined line (black on white or white on black).</li>
+      <li><strong>Objective:</strong> Complete the track in the shortest possible time.</li>
+      <li><strong>Registration Fee:</strong> 200 Rs</li>
+      <li><strong>Event Dates:</strong> 23 and 24 September</li>
+    </ul>
+
+    <h2>2. Team Rules</h2>
+    <ul>
+      <li>Team size: 1–4 members.</li>
+      <li>Only one robot per team.</li>
+      <li>No change of team members after registration.</li>
+    </ul>
+
+    <h2>3. Robot Specifications</h2>
+    <ul>
+      <li>Only autonomous robots are allowed (no manual control).</li>
+      <li>Size limit: 25cm × 25cm × 25cm, Weight limit: 1.5kg (±5% tolerance).</li>
+      <li>Power: Max 12V DC (onboard battery only).</li>
+      <li>Robot must use sensors (IR/Optical) to detect the line.</li>
+      <li>Must be student-built, not prebuilt.</li>
+    </ul>
+
+    <h2>4. Track Details</h2>
+    <ul>
+      <li>Background: White with black line (or vice versa).</li>
+      <li>Line width: (as specified in event arena).</li>
+      <li>Track may have curves, T-sections, sharp turns (45°, 90°), junctions, dead ends, and crossings.</li>
+    </ul>
+
+    <h2>5. Game Rules</h2>
+    <ul>
+      <li>Calibration time of 2 minutes will be given before the start of the run.</li>
+      <li>Each team gets 2 runs; best timing is considered.</li>
+      <li>First round will be the qualifying round.</li>
+      <li>Second round will be the final round.</li>
+      <li>Going off the line → +5 seconds penalty.</li>
+      <li>Each hand touch → +5 seconds penalty.</li>
+      <li>Touching the robot while moving is not allowed.</li>
+      <li>If bot moves out of the track it will be placed at last check point.</li>
+      <li></li>
+      <li>Damaging the track or unfair play = disqualification.</li>
+      <li>Judges’ decision will be final.</li>
+    </ul>
+
+    <h2>6. Scoring & Winning</h2>
+    <ul>
+      <li>Winner = fastest run including penalties.</li>
+      <li>In case of a tie → extra run.</li>
+    </ul>
+
+    <h2>7. Safety Rules</h2>
+    <ul>
+      <li>No harmful materials, fire, or sharp objects.</li>
+      <li>Only safe batteries (Li-ion, Li-Po, NiMH).</li>
+    </ul>
+
+    <h2>8. Code of Conduct</h2>
+    <ul>
+      <li>Maintain sportsmanship.</li>
+      <li>Organizers may change rules if needed.</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>© 2025 Swami Vivekanand College of Engineering — Line Follower Event</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RoboRace Rule Book</title>
+  <style>
+/* =============================  
+   Global Styles & Variables  
+============================= */
+:root {
+  --bg: #0b1020;
+  --bg-2: #0f1a36;
+  --text: #e8f0ff;
+  --muted: #b6c3e6;
+  --primary: #6dd3ff;
+  --accent: #9d7bff;
+  --glass: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.12);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --radius: 18px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, var(--bg), #090d1a);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+.container {
+  width: min(1100px, 92%);
+  margin: auto;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =============================  
+   Header  
+============================= */
+header {
+  background: rgba(11, 16, 32, 0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+/* =============================  
+   Main Content  
+============================= */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+}
+h2 {
+  color: var(--accent);
+  margin-top: 30px;
+  font-weight: 700;
+}
+ul {
+  margin: 10px 0 20px 20px;
+}
+li {
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+
+/* =============================  
+   Footer  
+============================= */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem 0;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* =============================  
+   Responsive  
+============================= */
+@media (max-width: 768px) {
+  body { font-size: 16px; }
+  header { padding: 15px; }
+  main { padding: 20px; margin: 10px; }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RoboRace Event Rule Book</h1>
+  </header>
+
+  <main>
+    <h2>1. Event Overview</h2>
+    <ul>
+      <li><strong>Event Name:</strong> RoboRace</li>
+      <li><strong>Organized By:</strong> Swami Vivekanand College of Engineering</li>
+      <li><strong>Event Type:</strong> Robotics Racing Competition</li>
+      <li><strong>Objective:</strong> Participants must design and race their robots on the given track in the shortest possible time while following all rules.</li>
+      <li><strong>Registration Fee:</strong> 200 Rs</li>
+      <li><strong>Event Dates:</strong> 23 and 24 September</li>
+    </ul>
+
+    <h2>2. Team Rules</h2>
+    <ul>
+      <li>Each team can have 1–4 members.</li>
+      <li>One robot per team.</li>
+      <li>Team members must register before the event starts.</li>
+      <li>Replacement of team members is not allowed after registration.</li>
+    </ul>
+
+    <h2>3. Robot Specifications</h2>
+    <ul>
+      <li>Robot type: Wired or Wireless.</li>
+      <li>Maximum dimensions: 300 mm × 300 mm × 300 mm . This is the subject to a maximum allowance of 10%..</li>
+      <li>Maximum weight: 3.5kg.</li>
+      <li>Power supply: Maximum 12V DC.</li>
+      <li>Robot must not damage the track.</li>
+      <li>Use of ready-made toy cars is not allowed; robots must be student-built.</li>
+    </ul>
+
+    <h2>4. Track Details</h2>
+    <ul>
+      <li>Track will consist of straight paths, curves, obstacles, ramps, and speed breakers.</li>
+      <li>Dimensions: Width at least 40cm, Length 10–20 meters (can vary).</li>
+      <li>Obstacles may include: Bridges, Zig-zag paths, Slopes, Rough patches, etc.</li>
+    </ul>
+
+    <h2>5. Game Rules</h2>
+    <ul>
+      <li>Each team gets a single run on the track. Best timing will be considered.</li>
+      <li>Time will be counted from the start line to the finish line.</li>
+      <li>If a robot goes off-track, a penalty of +10 seconds will be added.</li>
+      <li>If the robot falls off the track, then the team must place it back at the last crossed checkpoint, not at the fall point.</li>
+      <li>Each restart from a checkpoint will add a +10 seconds penalty.</li>
+      <li>Touching the robot while it’s moving is not allowed (except restart).</li>
+      <li>Damaging the track leads to disqualification.</li>
+      <li>Total technical timeout: 2 minutes.</li>
+      <li>If wires get entangled, the team will be given 2 minutes timeout to fix it.</li>
+      <li>During timeout, the timer will pause.</li>
+      <li>If the robot cannot be fixed within the time limit, the team will be disqualified.</li>
+      <li>Decision of judges will be final and binding.</li>
+    </ul>
+
+    <h2>6. Scoring & Winning</h2>
+    <ul>
+      <li>Winner = Team with least total time (including penalties).</li>
+      <li>In case of a tie → another race will be conducted.</li>
+    </ul>
+
+    <h2>7. Safety Rules</h2>
+    <ul>
+      <li>Wireless robots must operate in safe frequency bands.</li>
+      <li>Only approved batteries (Li-ion, Li-Po, NiMH, lead acid ) are allowed.</li>
+    </ul>
+
+    <h2>8. Code of Conduct</h2>
+    <ul>
+      <li>Teams must maintain sportsmanship.</li>
+      <li>Misbehavior with organizers/judges leads to disqualification.</li>
+      <li>Organizers reserve the right to change rules if necessary.</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>© 2025 Swami Vivekanand College of Engineering — RoboRace Event</p>
+  </footer>
+</body>
+</html>

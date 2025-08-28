@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robo Soccer Rule Book</title>
+  <style>
+/* =============================  
+   Global Styles & Variables  
+============================= */
+:root {
+  --bg: #0b1020;
+  --bg-2: #0f1a36;
+  --text: #e8f0ff;
+  --muted: #b6c3e6;
+  --primary: #6dd3ff;
+  --accent: #9d7bff;
+  --glass: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.12);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --radius: 18px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, var(--bg), #090d1a);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+.container {
+  width: min(1100px, 92%);
+  margin: auto;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =============================  
+   Header  
+============================= */
+header {
+  background: rgba(11, 16, 32, 0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+/* =============================  
+   Main Content  
+============================= */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+}
+h2 {
+  color: var(--accent);
+  margin-top: 30px;
+  font-weight: 700;
+}
+
+li {
+  /* margin-bottom: 10px; */
+  color: var(--muted);
+}
+
+/* =============================  
+   Footer  
+============================= */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem 0;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* =============================  
+   Responsive  
+============================= */
+@media (max-width: 768px) {
+  body { font-size: 16px; }
+  header { padding: 15px; }
+  main { padding: 20px; margin: 10px; }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Robo Soccer Event Rule Book</h1>
+  </header>
+
+  <main>
+    <h2>1. Event Overview</h2>
+    <ul>
+      <li><strong>Event Name:</strong> Robo Soccer</li>
+      <li><strong>Organized By:</strong> Swami Vivekanand College of Engineering</li>
+      <li><strong>Event Type:</strong> Robotics Soccer Competition</li>
+      <li><strong>Objective:</strong> Participants must design robots capable of playing soccer and scoring goals against the opponent team within the given time.</li>
+      <li><strong>Registration Fee:</strong> 200 rupees only</li>
+      <li><strong>Event Date:</strong> 23 and 24 September</li>
+    </ul>
+
+    <h2>2. Team Rules</h2>
+    <ul>
+      <li>Each team can have 1–4 members (students only).</li>
+      <li>Each team can use a maximum of 1 robot on the field at a time.</li>
+      <li>Team members must register before the event starts.</li>
+      <li>Replacement of team members is not allowed after registration.</li>
+    </ul>
+
+    <h2>3. Robot Specifications</h2>
+    <ul>
+      <li>Robot type: Wired / Wireless (manual or semi-autonomous).</li>
+      <li>Maximum dimensions: 300 mm (l)x 300 mm (b) x 300 mm (h). This is the subject to a maximum allowance of 10%.</li>
+      <li>Maximum weight: 3.5 kg.</li>
+      <li>Power supply: Maximum 12V DC. AC mains power allowed.</li>
+      <li>Use of ready-made toy cars is not allowed; robots must be student-built.</li>
+      <li>IC engines will not be allowed.</li>
+      <li>Any parts that are not securely attached to the robot are not allowed. All components must be firmly fixed to ensure the safety during the cometition.Any parts that may endanger the Participant /jury audience as flaagged on the jury decision will not be allowed.</li>
+    </ul>
+
+    <h2>4. Field Details</h2>
+    <ul>
+      <li>Field will resemble a mini soccer field with marked boundaries.</li>
+      <li>Field dimensions: approx. 6 feet x 12 feet (can vary).</li>
+      <li>Goals will be placed at both ends of the field.</li>
+      <li>The ball will be lightweight (plastic/tennis ball or similar).</li>
+      <li>Decision of referees/judges will be final and no arguments will be entertained.</li>
+    </ul>
+
+    <h2>5. Game Rules</h2>
+    <ul>
+      <li>Each match will be of 5 minutes duration (can vary).</li>
+      <li>Half time will be 2:30min,a half per match.</li>
+      <li>Kick-off will be decided by a coin toss.</li>
+      <li>Every match will start on the blow of the whistle.</li>
+      <li>Teams must try to score goals in the opponent’s net using their robots.</li>
+      <li>If the robot goes out of bounds, it will be placed back at the nearest boundary point.</li>
+      <li>If the robot falls or malfunctions, a technical timeout of 2 minutes will be allotted.</li>
+      <li>Once the match starts no modification in bots will be allowed.</li>
+      <li>Wired robots must manage their wires; if entangled, a timeout of 2 minutes will be allowed.</li>
+    
+      <li>Damaging the field, ball, or opponent robot leads to disqualification.</li>
+    </ul>
+
+    <h2>6. Scoring & Winning</h2>
+    <ul>
+      <li>Pyramid fixture will be used.</li>
+      <li>Each goal = 4 points.</li>
+      <li>Each penalty = -1 point.</li>
+      <li>Team with maximum points at the end of match wins.</li>
+      <li>In case of a tie, a rematch will be conducted.</li>
+    </ul>
+
+    <h2>7. Safety Rules</h2>
+    <ul>
+      <li>Robots must not use fire, explosives, sharp blades, or hazardous materials.</li>
+      <li>Only safe batteries (Li-ion, Li-Po, NiMH) are allowed.</li>
+      <li>Robots must not intentionally harm opponent robots.</li>
+    </ul>
+
+    <h2>8. Code of Conduct</h2>
+    <ul>
+      <li>Teams must maintain sportsmanship.</li>
+      <li>Misbehavior with organizers/judges leads to disqualification.</li>
+      <li>Organizers reserve the right to change rules if necessary.</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>© 2025 Swami Vivekanand College of Engineering — Robo Soccer Event</p>
+  </footer>
+</body>
+</html>
