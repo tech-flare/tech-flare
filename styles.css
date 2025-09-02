@@ -16,7 +16,7 @@
 
 * {
   box-sizing: border-box;
-   ali
+
 }
 
 body {
@@ -93,6 +93,7 @@ header {
   background: rgba(11, 16, 32, 0.7);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
+   z-index: 10;
 }
 
 .nav {
@@ -334,6 +335,7 @@ footer .container {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
